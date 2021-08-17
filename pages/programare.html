@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UtF-8" />
+    <link rel="icon" href="../images/icon.jpg" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <script src="../js/main.js"></script>
+    <title>CSP Crihana Veche</title>
+</head>
+
+<body>
+    <header>
+        <div id="navbar" class="nav">
+            <a href="../index.html">Home <i class="fas fa-clinic-medical logo"></i> </a>
+            <a href="servicii.html">Servicii <i class="fas fa-hospital-user logo"></i></a>
+            <a href="contacte.html">Contacte <i class="fas fa-address-card logo"></i></a>
+            <a href="programare.html" class="active">E-Programare <i class="fas fa-laptop-medical logo"></i> </a>
+            <a class="hamburger-menu" onclick="mobileMenu()"><i class="fa fa-bars"></i></a>
+        </div>
+    </header>
+
+    <div class="page-container">
+
+        <main>
+            <div class="row ">
+                <div class="col-40">
+                    <h2 class="center programare"> E bine de știut</h2>
+                        <p class="aviz">Pentru a beneficia de asistență medicală primară, toată populația indiferent de statutul persoanei
+                            asigurate  sau neasigurate, se înregistrează pe Lista medicului de familie din instituția medico-sanitară ce
+                            prestează asistență medicală primară în cadrul sistemului de asigurare obligatorie de asistență medicală.</br>
+
+                            Pentru a fi înregistrată la medicul de familie, persoana se adresează la medicul de familie sau
+                            persoana
+                            responsabilă din cadrul IMS AMP pentru completarea cererii. Modelul cererii puteți accesa la
+                            următorul
+                            <a target="_blank" href="../resurse/cerere.pdf" src="../resurse/cerere.pdf">link</a></br>
+
+                            Schimbarea medicului de familie și IMS AMP este posibilă pe tot parcursul anului, dar nu mai devreme
+                            de 6 luni de la ultima schimbare/ înregistrare primară, cu excepția cazurilor când persoana şi-a schimbat
+                            locul de trai în altă localitate/ sector.</br>
+
+                            Regulamentul privind înregistrarea persoanei la medicul de familie din instituţia medico-sanitară ce
+                            prestează asistenţă medicală primară în cadrul asigurării obligatorii de asistenţă medicală poate fi
+                            accesat la următorul <a target="_blank" href="https://www.legis.md/cautare/getResults?doc_id=122818&lang=ro"
+                                src="https://www.legis.md/cautare/getResults?doc_id=122818&lang=ro">link</a>
+                        </p>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-50 formular">    
+                   
+                    <h2 class="center programare">Faceţi o programare la medic completând formularul de mai jos cu datele D-tră</h2>
+                    <!-- <h4> Pentru programare la medicul de familie Vă rugăm să  </h4> -->
+                <!-- </br> -->
+                    <form autocomplete="on">
+                        <fieldset>
+                            <legend>Programare online</legend>
+                            <label for="nume">Nume*:</label>
+                            <input type="text" id="nume" pattern="[A-Z]+" minlength="3" maxlength="=10" size=8
+                                placeholder="Introdu numele" required />
+                            <br /><br />
+
+                            <label for="prenume">Prenume*:</label>
+                            <input type="text" id="prenume" placeholder="Introdu prenumele" required />
+                            <br /> <br />
+
+                            <label for="tel">Telefon*:</label>
+                            <input type="text" id="tel" pattern="[0-9]" maxlength="10" required />
+                            <br /> <br />
+
+
+                            <label for="medic">Solicit programare la medicul:</label>
+                            <input list="medici" name="medic" id="medic">
+                            <datalist id="medici">
+                                <option value="Armanu  Ivan"></option>
+                                <option value="Moroianu Vergiliu"></option>
+                            </datalist>
+                            <label for="data-program">Pentru data:</label>
+                            <input type="date" id="data-program" />
+                            <br /> <br />
+                            <label>Genul</label>
+                            <label for="feminin">F</label>
+                            <input type="radio" id="feminin" name="gen" checked />
+                            <label for="masculin">M</label>
+
+                            <input type="radio" id="masculin" name="gen" />
+                            <br /> <br />
+
+                            <label for="regula">Confirm veridicitatea datelor întroduse</label>
+                            <input type="checkbox" id="regula" required />
+                            <br /> <br />
+
+                            <input type="submit" value="Trimite" />
+
+                        </fieldset>
+                    </form>
+
+
+                </div>
+                
+            </div>
+        </main>
+
+
+    </div>
+
+
+
+
+    <footer>
+        Centru de Sănătate Publică Crihana Veche - 2021
+    </footer>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
